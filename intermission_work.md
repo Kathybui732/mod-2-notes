@@ -5,17 +5,13 @@ Answer these Check for Understanding questions as you work through the assignmen
 ## HTML
 
 1. What is HTML?
-- HTML stands for Hypertext Markup Language. HTML is the standard markup language for Web pages. You use HTML to create your own website. Regulated standards by the  World Wide Web Consortium (W3C). The purpose of a web browser is to read the HTMl docutments and display them correctly.
+* HTML stands for Hypertext Markup Language. HTML is the standard markup language for Web pages. You use HTML to create your own website. Regulated standards by the  World Wide Web Consortium (W3C). The purpose of a web browser is to read the HTMl docutments and display them correctly.
+
 1. What is an HTML element?
-- The `<html>` element is the root element and it defines the whole HTML document. It has a start tag `<html>` and an end tag `</html>`. An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. For example, `<p>` is starting tag of a paragraph and `</p>` is closing tag of the same paragraph but `<p>`This is paragraph`</p>` is a paragraph element. `<br>` is an empty element (doesn't have content and no end tag).
+* The `<html>` element is the root element and it defines the whole HTML document. It has a start tag `<html>` and an end tag `</html>`. An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. For example, `<p>` is starting tag of a paragraph and `</p>` is closing tag of the same paragraph but `<p>`This is paragraph`</p>` is a paragraph element. `<br>` is an empty element (doesn't have content and no end tag).
 
-1. What is an HTML attribute?
- - An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a name and a value. **name="value"**
- - The **name** is the property you want to set. For example, the paragraph `<p>` element in the example carries an attribut whose name is align, which you can use to indicate the alignment of paragraph on the page.
- - The **value** is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: left, center and right.
- - Attribute names and attribute values are case-insensitive.
-
- - All HTML elements can have attributes
+1. What is an HTML attribute?* An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts − a name and a value. **name="value"*** The **name** is the property you want to set. For example, the paragraph `<p>` element in the example carries an attribut whose name is align, which you can use to indicate the alignment of paragraph on the page.* The **value** is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: left, center and right.* Attribute names and attribute values are case-insensitive.
+* All HTML elements can have attributes
   * The href attribute of `<a>` specifies the URL of the page the link goes to
   * The src attribute of `<img>` specifies the path to the image to be displayed
   * The width and height attributes of `<img>` provide size information for images
@@ -52,10 +48,10 @@ Answer these Check for Understanding questions as you work through the assignmen
   Semantic element clearly describes its meaning to both the browser and the developer. That is they tell us and the browser about their content and their purpose, whereas 'div' does not tell us anything about their contents. Using systematic elements helps the engines to read the pafe and find the required info faster. 'div' do not do this.
 
 1. Block level elements in HTML:
-  - A container for all HTML elements. They section out a whole block on html by occupying the whole entire space of its parent element. They can take up one line or a multiple lines. Black level tags are: 'h1', 'h6', 'ol', 'ul', 'dl', 'li'.  
+* A container for all HTML elements. They section out a whole block on html by occupying the whole entire space of its parent element. They can take up one line or a multiple lines. Black level tags are: 'h1', 'h6', 'ol', 'ul', 'dl', 'li'.  
 
 1. Explain what each of the following HTML tags do and when you would use them:
-  * `<!DOCTYPE html>` - Document type declaration. All HTML documents must start with a document type declaration. Not case sensitive
+  * `<!DOCTYPE html>` Document type declaration. All HTML documents must start with a document type declaration. Not case sensitive
   * `<html>` and `</html>` - How all html documents start. The root element - defines the whole HTML document.
   * `<h1>`, `<h2>`, etc. - Headings. With 1 being the most important and 6 the least.
   * `<p>` - Paragraphs
