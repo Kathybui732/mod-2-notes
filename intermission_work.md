@@ -80,17 +80,17 @@ Answer these Check for Understanding questions as you work through the assignmen
   CSS stands for Cascading Style Sheets. HTML was created to describe the contents of a webpage, whereas CSS was created to style formatting. CSS is a language that describes the style of an HTML document. It describes how HTML elements should be displayed. It controls the layout of multiple web pages. You can use different stylesheets to format the html differently.
 1. What is a CSS selector? How do you use the ID selector? The class selector?
   A selector points to the HTML element you want to style. Selectors are used to "find" the HTML elements you want to style. CSS selectors can be divided into 5 categories:
-  * simple selectors: select elements based on name, id and class
-  * Combinatior selectors: selects elements based on a specific relationship between them
-  * Pseudo-class selectors: selects elements based on state
-  * Pseudo-element selectors: selects and styles part of an element
-  * Attribute selectors: selects elements based on the attribute or attribute value. 
+   * simple selectors: select elements based on name, id and class
+   * Combinatior selectors: selects elements based on a specific relationship between them
+   * Pseudo-class selectors: selects elements based on state
+   * Pseudo-element selectors: selects and styles part of an element
+   * Attribute selectors: selects elements based on the attribute or attribute value. 
   An id selector uses the id sttribute of HTML element to select a specific element. id's are unique within a page which is why you can use an id selector to find id attributes. In order to use the id selector, you have to put a # before the id name. 
   A class selector selects an HTML element with a specific class attribute. To use a class selector, you use a period (.) before the class name. 
 1. What are the three ways to include CSS in your HTML documents? What are the pros and cons of each?
-  1. External CSS
-  1. Internal CSS
-  1. Inline CSS
+   1. External CSS
+   1. Internal CSS
+   1. Inline CSS
 1. What is the Box Model? Describe each component of the Box Model.
 
 ## SQL
