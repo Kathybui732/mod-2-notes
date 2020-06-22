@@ -88,7 +88,7 @@ Answer these Check for Understanding questions as you work through the assignmen
   An id selector uses the id sttribute of HTML element to select a specific element. id's are unique within a page which is why you can use an id selector to find id attributes. In order to use the id selector, you have to put a # before the id name. 
   A class selector selects an HTML element with a specific class attribute. To use a class selector, you use a period (.) before the class name. 
 1. What are the three ways to include CSS in your HTML documents? What are the pros and cons of each?
-   1. External CSS
+   1. External CSS - changes the look of an entire website. 
    1. Internal CSS
    1. Inline CSS
 1. What is the Box Model? Describe each component of the Box Model.
