@@ -5,7 +5,7 @@ Answer these Check for Understanding questions as you work through the assignmen
 ## HTML
 
 1. What is HTML?
- - HTML stands for Hypertext Markup Language. HTML is the standard markup language for Web pages. You use HTML to create your own website. Regulated standards by the  World Wide Web Consortium (W3C). The purpose of a web browser is to read the HTMl docutments and display them correctly.
+..* HTML stands for Hypertext Markup Language. HTML is the standard markup language for Web pages. You use HTML to create your own website. Regulated standards by the  World Wide Web Consortium (W3C). The purpose of a web browser is to read the HTMl docutments and display them correctly.
 
 1. What is an HTML element?
  - The `<html>` element is the root element and it defines the whole HTML document. It has a start tag `<html>` and an end tag `</html>`. An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. For example, `<p>` is starting tag of a paragraph and `</p>` is closing tag of the same paragraph but `<p>`This is paragraph`</p>` is a paragraph element. `<br>` is an empty element (doesn't have content and no end tag).
