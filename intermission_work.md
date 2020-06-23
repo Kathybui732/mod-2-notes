@@ -163,10 +163,10 @@ Answer these Check for Understanding questions as you work through the assignmen
 1. What is an aggregate function?
   It is used to extract information about whole groups of rows and allows us to easily ask questions yielding the most expensive facility or who has recommended the most new members.It preforms a calculation on a set of values and returns a single calue. Aggregate functions ignore null values. They are often used with the group by clause and select statement. All aggregate functions are deterministics. 
 1. List three aggregate functions and what they do.
-  * COUNT counts how many rows are in a particular column.
-  * SUM adds together all the values in a particular column.
-  * MIN and MAX return the lowest and highest values in a particular column, respectively.
-  * AVG calculates the average of a group of selected values.
+	* COUNT counts how many rows are in a particular column.
+  	* SUM adds together all the values in a particular column.
+  	* MIN and MAX return the lowest and highest values in a particular column, respectively.
+  	* AVG calculates the average of a group of selected values.
 1. What does the `group` statement do?
   Groups rows that have the same values into summary rows 
 1. How does the `group` statement relate to aggregates?
