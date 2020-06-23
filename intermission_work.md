@@ -77,9 +77,9 @@ Answer these Check for Understanding questions as you work through the assignmen
  ## CSS
 
 1. What is CSS?
-  CSS stands for Cascading Style Sheets. HTML was created to describe the contents of a webpage, whereas CSS was created to style formatting. CSS is a language that describes the style of an HTML document. It describes how HTML elements should be displayed. It controls the layout of multiple web pages. You can use different stylesheets to format the html differently.
+CSS stands for Cascading Style Sheets. HTML was created to describe the contents of a webpage, whereas CSS was created to style formatting. CSS is a language that describes the style of an HTML document. It describes how HTML elements should be displayed. It controls the layout of multiple web pages. You can use different stylesheets to format the html differently.
 1. What is a CSS selector? How do you use the ID selector? The class selector?
-  A selector points to the HTML element you want to style. Selectors are used to "find" the HTML elements you want to style. CSS selectors can be divided into 5 categories:
+A selector points to the HTML element you want to style. Selectors are used to "find" the HTML elements you want to style. CSS selectors can be divided into 5 categories:
    * simple selectors: select elements based on name, id and class
    * Combinatior selectors: selects elements based on a specific relationship between them
    * Pseudo-class selectors: selects elements based on state
@@ -92,7 +92,7 @@ Answer these Check for Understanding questions as you work through the assignmen
    1. Internal CSS - used if one single HTML page has a unique style. defined inside the `<style>`.
    1. Inline CSS - used for a unique style of one single element. This method loses the advantages of a style sheet by mixing content with presentation.
 1. What is the Box Model? Describe each component of the Box Model.
-  "Box model" is used to talk about design and layout. It is essentially a box that wraps around every html element consisting of margins, borders, padding and the actual content. **content** is where the text and images appear. **padding** is the transparent area aroung the content. **border** is the border that goes around the padding and content. **margin** is the transparent area cleared out arounf the boarder. 
+"Box model" is used to talk about design and layout. It is essentially a box that wraps around every html element consisting of margins, borders, padding and the actual content. **content** is where the text and images appear. **padding** is the transparent area aroung the content. **border** is the border that goes around the padding and content. **margin** is the transparent area cleared out arounf the boarder. 
 
 ## SQL
 
@@ -178,7 +178,12 @@ Answer these Check for Understanding questions as you work through the assignmen
 **Copy and Paste the link to your Static Challenge here:**
 
 1. Define CRUD.
+   * C: Create
+   * R: Read
+   * U: Update
+   * D: Delete
 1. Define MVC.
+   Model, view, controller. Allows for more dynamic pages. Basic structure which most web applications are built on.
 1. What three files would you need to create/modify for a Rails application to respond to a `GET` request to `/tasks`, assuming you have a `Task` model.
 1. What are params? Where do they come from?
 1. Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task?
