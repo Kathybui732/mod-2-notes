@@ -185,5 +185,8 @@ A selector points to the HTML element you want to style. Selectors are used to "
 1. Define MVC.
    Model, view, controller. Allows for more dynamic pages. Basic structure which most web applications are built on.
 1. What three files would you need to create/modify for a Rails application to respond to a `GET` request to `/tasks`, assuming you have a `Task` model.
+	* app - This is where our MVC structure lives.
+	* config - Inside this directory, in the routes.rb file is where we will tell our Rails app which HTTP requests to respond to.
+	* db - Where our database structure will be set up.
 1. What are params? Where do they come from?
 1. Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task?
