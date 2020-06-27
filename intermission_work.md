@@ -189,4 +189,6 @@ A selector points to the HTML element you want to style. Selectors are used to "
 	* config - Inside this directory, in the routes.rb file is where we will tell our Rails app which HTTP requests to respond to.
 	* db - Where our database structure will be set up.
 1. What are params? Where do they come from?
+	Params refers to the parameters being passed to the controller via a GET or POST request. It is the parameters method that comes from ActionController::Base, which is accessed by your application via ApplicationController.
 1. Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task?
+	We use routes to map a URL to a controller and an action. When the Rails router sees a request it dispatches it to a controller's action matching the URL.We need two different routes when creating a new task and editing an existing one because they're living in two different locations. If they routed to the same place, what you did would overwrite the previous thing. LIke, let's say we had an existing task, if we wrote a new one, that existing one would disappear and a new task would take its place if they had the same route. 
