@@ -175,7 +175,12 @@ A selector points to the HTML element you want to style. Selectors are used to "
 ## Rails Tutorial: Task Manager
 
 **Copy and Paste the link to your Task Manager repo here:**
+
+https://github.com/Kathybui732/task_manager
+
 **Copy and Paste the link to your Static Challenge here:**
+
+https://github.com/Kathybui732/static_challenges
 
 1. Define CRUD.
    * C: Create
