@@ -1,15 +1,16 @@
-### Write a test
-### Create the model (if it doesn't exist)
-### Create a migration that creates the database and attributes (if it doesn't exist)
-### Create the route for your feature test
-### Create the controller that is associated with the route
-### Create the controller action that is associated with the route
-### Create the view for the controller action
-### Fill the view with the DB data
-### Fill in the controller action with a database query (.all, etc)
-### ?????
-### Profit
+1. Write a test
+1. Create the model (if it doesn't exist)
+1. Create a migration that creates the database and attributes (if it doesn't exist)
+1. Create the route for your feature test
+1. Create the controller that is associated with the route
+1. Create the controller action that is associated with the route
+1. Create the view for the controller action
+1. Fill the view with the DB data
+1. Fill in the controller action with a database query (.all, etc)
+1. ?????
+1. Profit
 
+## HOW TO START:
 1. How to create a rails app from scratch: ```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
