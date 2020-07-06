@@ -31,8 +31,7 @@
           with.test_framework :rspec
           with.library :rails
         end
-      end
-```
+      end```
 9. In rails_helper.rb
   - Configure SimpleCov ```require 'simplecov'
     SimpleCov.start
