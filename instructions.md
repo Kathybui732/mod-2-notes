@@ -10,7 +10,7 @@
 ### ?????
 ### Profit
 
-1. ```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
+1. How to create a rails app from scratch: ```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
 3. Configure the database ```rake db:created
@@ -21,14 +21,12 @@
     * **capybara** - gives us tools for feature testing
     * **launchy** - allows us to use save_and_open_page so that when you put that in our code, when it hits, it'll generate a new browser with our code so that we can look at it. It's a little slow and should be use as the last line when you can't figure out why something isn't working the way you expected it to.
     * **pry** - debugging tool
-    * **simplecov** - test coverage
-    * **shoulda-matchers** - simple one liners helpful in testing validations and relationships on models
+    * **simplecov** - test coverage testing validations and relationships on models
     * **active_designer** - give you a visual of the current structure of your database
     * **nyan-cat-formatter** - for test funsies
 6. Run `bundle install`
 7. Rspec setup run `rails g rspec:install`
-8. Shoulda-matchers setup in rails_helper.rb:
-    ```Shoulda::Matchers.configure do |config|
+8. Shoulda-matchers setup in rails_helper.rb: ```Shoulda::Matchers.configure do |config|
         config.integrate do |with|
           with.test_framework :rspec
           with.library :rails
