@@ -1,15 +1,16 @@
-### Write a test
-### Create the model (if it doesn't exist)
-### Create a migration that creates the database and attributes (if it doesn't exist)
-### Create the route for your feature test
-### Create the controller that is associated with the route
-### Create the controller action that is associated with the route
-### Create the view for the controller action
-### Fill the view with the DB data
-### Fill in the controller action with a database query (.all, etc)
-### ?????
-### Profit
+1. Write a test
+1. Create the model (if it doesn't exist)
+1. Create a migration that creates the database and attributes (if it doesn't exist)
+1. Create the route for your feature test
+1. Create the controller that is associated with the route
+1. Create the controller action that is associated with the route
+1. Create the view for the controller action
+1. Fill the view with the DB data
+1. Fill in the controller action with a database query (.all, etc)
+1. ?????
+1. Profit
 
+## HOW TO START:
 1. How to create a rails app from scratch: ```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
@@ -26,17 +27,19 @@
     * **nyan-cat-formatter** - for test funsies
 6. Run `bundle install`
 7. Rspec setup run `rails g rspec:install`
-8. Shoulda-matchers setup in rails_helper.rb: ```Shoulda::Matchers.configure do |config|
+8. Shoulda-matchers setup in rails_helper.rb: 
+```Shoulda::Matchers.configure do |config|
         config.integrate do |with|
           with.test_framework :rspec
           with.library :rails
         end
       end
-```
+ ```
 9. In rails_helper.rb
-  - Configure SimpleCov ```require 'simplecov'
+  - Configure SimpleCov 
+  ```require 'simplecov'
     SimpleCov.start
-    ```
+  ```
   - Add "--format NyanCatFormatter" to .rpsec
 10. Directory setup
     ```mkdir spec/models spec/features
@@ -62,9 +65,10 @@
 
 end
 ```
-4. Make sure application_record.rb has this in it: ```class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
-end
+4. Make sure application_record.rb has this in it: 
+```class ApplicationRecord < ActiveRecord::Base
+     self.abstract_class = true
+   end
 ```
 5. Add the validations i.e.
 ```
@@ -93,10 +97,10 @@ PG::UnidentifinedTable: ERROR: relation "songs" does not exist` - we have to cre
 ## Rails console
 5. Use `rails console` or `rails c` to allows you to access and work with just about any part of your application directly instead of going through the web interface. This allows you to add stuff to your devo database. You can use this like IRB. You can add things to the database this way. i.e.
 ```$ object = Object.new
-$ object.title = "Sample Object Title"
-$ object.body = "This is the text for my object, woo hoo!"
-$ object.save
-$ Object.all
+   $ object.title = "Sample Object Title"
+   $ object.body = "This is the text for my object, woo hoo!"
+   $ object.save
+   $ Object.all
 ```
 You have to save the changes you made!
 
@@ -129,7 +133,7 @@ edit_object GET    /objects/:id/edit(.:format) objects#edit
              PATCH  /objects/:id(.:format)      objects#update
              PUT    /objects/:id(.:format)      objects#update
              DELETE /objects/:id(.:format)      objects#destroy
-             ```
+```
 These are the seven core actions of Rails' REST implementation. If you comment out the `resources :objects` it will say that there are no routes created.
 - to be RESTful, you typically want to be able to utilize these, so seperate objects/models should have their own controllers to route to.
 
@@ -145,7 +149,8 @@ These are the seven core actions of Rails' REST implementation. If you comment o
 end
 ```
 to the objects controller file.
-4. now we should be getting an error that there is no action 'index' we can add this method by adding ```def index
+4. now we should be getting an error that there is no action 'index' we can add this method by adding 
+```def index
   @objects = Object.all
 end
 ```
