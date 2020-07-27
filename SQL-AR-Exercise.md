@@ -28,13 +28,13 @@ As any kind of user on the system When I visit the items index page (â€œ/itemsâ€
 ```
   select merchants.name, sum(items.inventory) as items_inventory from merchants join items on merchants.id = items.merchant_id group by merchants.id order by items_inventory desc;
 
-This is based on inventory...Next query is more of what this is asking for...
+        This is based on inventory...Next query is more of what this is asking for...
 
   SELECT merchants.name FROM merchants JOIN items ON merchants.id = items.merchant_id GROUP BY merchants.id ORDER BY count(items) DESC LIMIT 5;
 
   Merchant.joins(:items).group(:id).order('count(items) desc').limit(5)
 
-OR
+                    OR
 
   Merchant.select('merchants.*, count(items) as item_count').joins(:items).group(:id).order('item_count desc').limit(5)
 (This would return objects that have access to a method called #item_count that you can call to access how many items they actually have)
@@ -47,12 +47,12 @@ OR
 ```
 1. The names of the 5 users who have placed the most orders.
 ```
-SELECT users.name, count(orders) FROM users JOIN orders ON users.id = orders.user_id GROUP BY users.id ORDER BY count DESC;
+  SELECT users.name, count(orders) FROM users JOIN orders ON users.id = orders.user_id GROUP BY users.id ORDER BY count DESC;
 
-User.joins(:orders).group(:id).order('count(orders) desc').limit(5)
+  User.joins(:orders).group(:id).order('count(orders) desc').limit(5)
 
-OR
+                     OR
 
-User.select('users.*, count(orders)').joins(:orders).group(:id).order('count(orders) desc').limit(5)
+  User.select('users.*, count(orders)').joins(:orders).group(:id).order('count(orders) desc').limit(5)
 ```
 1. The top 5 merchants by number of items sold.
