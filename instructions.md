@@ -11,7 +11,8 @@
 1. Profit
 
 ## HOW TO START:
-1. How to create a rails app from scratch: ```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
+1. How to create a rails app from scratch: 
+```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
 3. Configure the database ```rake db:created
@@ -145,7 +146,6 @@ These are the seven core actions of Rails' REST implementation. If you comment o
 2. `touch app/controllers/objects_controller.rb`
 3. Add
 ```class ObjectsController < ApplicationController
-
 end
 ```
 to the objects controller file.
