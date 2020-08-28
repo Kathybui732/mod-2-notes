@@ -12,10 +12,13 @@
 
 ## HOW TO START:
 1. How to create a rails app from scratch: 
-```rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
+```
+rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
-3. Configure the database ```rake db:created
+3. Configure the database 
+```
+rake db:created
 ```
 4. `rails s` to launch the server http://localhost:3000  
 5. Add your gems to Gemfile only to development/tests because these help us test when we're developing. When we deploy to heroku, we don't need our testing environment. Here are some:
@@ -29,7 +32,8 @@
 6. Run `bundle install`
 7. Rspec setup run `rails g rspec:install`
 8. Shoulda-matchers setup in rails_helper.rb: 
-```Shoulda::Matchers.configure do |config|
+```
+Shoulda::Matchers.configure do |config|
         config.integrate do |with|
           with.test_framework :rspec
           with.library :rails
@@ -38,14 +42,17 @@
  ```
 9. In rails_helper.rb
   - Configure SimpleCov 
-  ```require 'simplecov'
+  ```
+  require 'simplecov'
     SimpleCov.start
   ```
   - Add "--format NyanCatFormatter" to .rpsec
 10. Directory setup
-    ```mkdir spec/models spec/features
     ```
-    ```touch spec/models/.keep spec/features/.keep
+    mkdir spec/models spec/features
+    ```
+    ```
+    touch spec/models/.keep spec/features/.keep
     ```
 11. ALWAYS CHECKOUT TO A NEW BRANCH PER FEATURE/FUNCTIONALITY
 12. 2 types of tests:
@@ -62,12 +69,14 @@
     * `Uninitialized Constant Object` - we have to make a model!
 2. We have to create the object/model of what we're trying to create (object) `touch app/models/object.rb`
 3. Add this to create the model/object:
-```class Object < ApplicationRecord
+```
+class Object < ApplicationRecord
 
 end
 ```
 4. Make sure application_record.rb has this in it: 
-```class ApplicationRecord < ActiveRecord::Base
+```
+class ApplicationRecord < ActiveRecord::Base
      self.abstract_class = true
    end
 ```
@@ -110,7 +119,8 @@ You have to save the changes you made!
 - follow typical add/commit process
 - create new branches for every feature/functionality
 - commit & merge and make a pull request with a PR with your changes for example:
-```Add Object Model
+```
+Add Object Model
 * Add Spec with validations for title and body
 * Add migration to create objects table in DB
 * Add Object model
@@ -121,11 +131,13 @@ You have to save the changes you made!
 
 ## Setting up the Router
 - Errors! No routes matching whatever! Typically you can use those routes mentioned. After a link or a button, you can use `method: :get`, `method: :update`, `method: :delete`, `method: :patch`, `method: :put` to help with the routes.
-```ActionController::RoutingError:
+```
+ActionController::RoutingError:
     No route matches [GET] "/objects"
 ```
 - add `resources :objects` to routes.rb. This line tells Rails that we have a resource named objects and the router. This will give
-```      Prefix Verb   URI Pattern                  Controller#Action
+```      
+    Prefix Verb   URI Pattern                  Controller#Action
     objects GET    /objects(.:format)          objects#index
              POST   /objects(.:format)          objects#create
  new_object GET    /objects/new(.:format)      objects#new
@@ -140,7 +152,8 @@ These are the seven core actions of Rails' REST implementation. If you comment o
 
 ## Creating the Controller
 1. We should be getting this error
-```ActionController::RoutingError:
+```
+ActionController::RoutingError:
     uninitialized constant ObjectsController
 ```
 2. `touch app/controllers/objects_controller.rb`
