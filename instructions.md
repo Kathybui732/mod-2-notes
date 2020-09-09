@@ -172,6 +172,7 @@ Need to utilize the built in methods!
 Things to do for travis and heroku configurations:
 - bundle install with figaro
 - add api keys to application.yml file
+- travis setup heroku
 - travis encrypt $(heroku auth:token) --add deploy.api_key
 - travis encrypt MY_SECRET_ENV=super_secret --add env.global
 - figaro heroku:set -e production
