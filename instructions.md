@@ -14,6 +14,7 @@
 1. How to create a rails app from scratch: 
 ```
 rails _5.1.7_ new myapp -T --database=postgresql --skip-spring --skip-turbolinks
+rails _5.1.7_ new myapp -api -T --database=postgresql --skip-spring --skip-turbolinks
 ```
 2. git init/add/commit - "Initial commit"
 3. Configure the database 
